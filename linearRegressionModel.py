@@ -17,7 +17,7 @@ def phi(x):
 
 PHI = np.array([phi(x) for x in X])
 w = np.dot(np.linalg.inv(r * np.identity(d) + np.dot(PHI.T, PHI)), np.dot(PHI.T, t))
-print(w)
+
 def f(w, x):
     return np.dot(w, phi(x))
 
